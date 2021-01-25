@@ -1,0 +1,21 @@
+<h1 class="display-4 text-center"><a href="/dashboard"><i class="fas fa-dog"></i></a>Dog Parks</h1>
+
+<div class="list-group">
+  <ul>
+  {{#each dogparksData}}
+ <li class="list-group-item">
+   <a href='/dogparks/{{this._id}}' class="list-group-item list-group-item-action">{{this.name}}</a>
+   </li>
+  {{/each}}
+  <a href="dogparks/new" class="btn btn-outline-secondary btn-outline-success">
+    Add a Dog Park
+  </a>
+</ul>
+</div>
+
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link active" href="#"><a href="/dashboard"><i class="fas fa-running fa-2x"></i></a>
+    </li>
+</ul>
+ 
